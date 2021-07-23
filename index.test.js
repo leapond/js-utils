@@ -13,3 +13,7 @@ test('mergeTypes', ()=>{
   expect(getMergeType(new Set)).toBe(3)
   expect(getMergeType(new Map)).toBe(4)
 })
+
+test('mergeTypeOfLeapondClass', ()=>{
+  expect(getMergeType(Object.create({CID:undefined}))).toBe(0)
+})
