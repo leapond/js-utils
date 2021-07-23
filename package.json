@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "description": "On-demand tiny utilities.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -29,8 +28,13 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
-    "@babel/register": "^7.14.5",
+    "@types/jest": "^26.0.24",
     "assert": "^2.0.0",
     "jest": "^27.0.6"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules\/(?!leapond)(.*)"
+    ]
   }
 }
