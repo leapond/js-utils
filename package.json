@@ -1,0 +1,28 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "On-demand tiny utilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leapond/js-utils.git"
+  },
+  "keywords": [
+    "ondemand",
+    "tiny",
+    "util",
+    "utilites",
+    "utility",
+    "leapond",
+    "javascript"
+  ],
+  "author": "Leapond, Inc. (https://www.leapond.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leapond/js-utils/issues"
+  },
+  "homepage": "https://github.com/leapond/js-utils#readme"
+}
