@@ -1,6 +1,6 @@
 {
   "name": "leapond-js-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "On-demand tiny utilities.",
   "main": "index.js",
   "scripts": {
