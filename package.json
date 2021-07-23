@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "leapond-js-utils",
   "version": "1.0.0",
   "description": "On-demand tiny utilities.",
   "main": "index.js",
