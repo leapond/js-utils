@@ -3,8 +3,9 @@
   "version": "1.0.2",
   "description": "On-demand tiny utilities.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/leapond/js-utils/issues"
   },
-  "homepage": "https://github.com/leapond/js-utils#readme"
+  "homepage": "https://github.com/leapond/js-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/register": "^7.14.5",
+    "assert": "^2.0.0",
+    "jest": "^27.0.6"
+  }
 }
