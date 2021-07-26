@@ -2,25 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <!--
-  <link rel="icon" href="favicon.ico"/>
-  <link rel="stylesheet" href="client/index.css"/>
-  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>utils</title>
 </head>
 <body>
 <h1>utils test</h1>
 <p>view in console.</p>
-<script type="module">
-  import {getMergeType} from "./utils.es.js";
-  // for playing in console
-  window.getMergeType = getMergeType
-
-  console.log(getMergeType({a: 1}))
+<!--Legacy-->
+<script src="./utils-bundle.iife.js"></script>
+<script>
+  console.log('iife', utils.getMergeType({a: 1}))
 </script>
-<!--
-<script nomodule defer src="index.browser.babel.js"></script>
--->
+<!--ESM-->
+<script type="module">
+  import {getMergeType} from "./utils-bundle.es.js";
+
+  console.log('esm', getMergeType({a: 2}))
+</script>
 </body>
 </html>
