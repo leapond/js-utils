@@ -1,9 +1,12 @@
 {
   "name": "leapond-js-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "On-demand tiny utilities.",
-  "main": "index.js",
+  "main": "dist/utils.cjs.js",
+  "module": "dist/utils.es.js",
   "scripts": {
+    "build": "rollup -c --environment NODE_ENV:production",
+    "dev": "rollup -wc",
     "test": "jest"
   },
   "repository": {
@@ -28,13 +31,17 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "@types/jest": "^26.0.24",
     "assert": "^2.0.0",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "rollup": "^2.54.0",
+    "rollup-plugin-serve": "^1.1.0"
   },
   "jest": {
     "transformIgnorePatterns": [
-      "/node_modules\/(?!leapond)(.*)"
+      "/node_modules/(?!leapond)(.*)"
     ]
   }
 }

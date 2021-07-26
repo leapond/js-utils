@@ -1,4 +1,4 @@
-import {getMergeType, toStr} from "./index";
+import {getMergeType, toStr} from "../src/index";
 
 test('toStr()', ()=>{
   expect(toStr.call({})).toBe('[object Object]')
