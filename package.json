@@ -2,8 +2,8 @@
   "name": "leapond-js-utils",
   "version": "1.0.4",
   "description": "On-demand tiny utilities.",
-  "main": "dist/utils.cjs.js",
-  "module": "dist/utils.es.js",
+  "main": "dist/utils-bundle.cjs.js",
+  "module": "dist/utils-bundle.es.js",
   "scripts": {
     "build": "rollup -c --environment NODE_ENV:production",
     "dev": "rollup -wc",

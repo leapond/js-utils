@@ -1,9 +1,9 @@
 import serve from "rollup-plugin-serve";
 import buble from "@rollup/plugin-buble";
+import nodeResolve from "@rollup/plugin-node-resolve";
 
 const isDev = process.env.NODE_ENV !== 'production',
-    pkg = require('./package.json'),
-    external = pkg.dependencies && Object.keys(pkg.dependencies)
+    pkg = require('./package.json')
 
 export default {
   input: 'src/index.js',
@@ -11,6 +11,5 @@ export default {
     {file: pkg.main, format: 'cjs', sourcemap: true, exports: 'auto'},
     {file: pkg.module, format: 'es', sourcemap: true}
   ],
-  plugins: [buble(), isDev && serve('dist') || null],
-  external: external
+  plugins: [nodeResolve(), buble(), isDev && serve('dist') || null],
 }
