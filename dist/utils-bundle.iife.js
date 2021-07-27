@@ -7,8 +7,6 @@ var utils = (function (exports) {
   function getMergeType(target) {
     return target &&
         typeof target === 'object' &&
-        // make Leapond Classes not be copy/merged
-        !('CID' in target) &&
         mergeTypes[toStr.call(target)] ||
         0
   }
